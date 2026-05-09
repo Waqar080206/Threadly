@@ -161,7 +161,7 @@ export default function DashboardScreen() {
   const visibleActivity = showAllActivity ? activityLog : activityLog.slice(0, 10);
 
   return (
-    <ThemedView style={styles.page}>
+    <ThemedView lightColor="transparent" style={styles.page}>
       <ScrollView ref={scrollRef} contentContainerStyle={styles.content} showsVerticalScrollIndicator={false}>
         <View style={styles.header}>
           <View style={styles.headerCircle} />

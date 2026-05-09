@@ -5,7 +5,7 @@ import { ThemedView } from '@/components/themed-view';
 
 export default function MorningConnectScreen() {
   return (
-    <ThemedView style={styles.container}>
+    <ThemedView lightColor="transparent" style={styles.container}>
       <ThemedText type="title">Morning Connect</ThemedText>
       <ThemedText>
         This space is for your top morning connection work. It should surface the

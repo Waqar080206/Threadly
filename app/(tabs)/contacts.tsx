@@ -5,7 +5,7 @@ import { ThemedView } from '@/components/themed-view';
 
 export default function ContactsScreen() {
   return (
-    <ThemedView style={styles.container}>
+    <ThemedView lightColor="transparent" style={styles.container}>
       <ThemedText type="title">Contacts</ThemedText>
       <ThemedText>
         Your people are listed here. Use this space for quick access to the contacts

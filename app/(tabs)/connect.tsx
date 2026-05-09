@@ -5,7 +5,7 @@ import { ThemedView } from '@/components/themed-view';
 
 export default function ConnectScreen() {
   return (
-    <ThemedView style={styles.container}>
+    <ThemedView lightColor="transparent" style={styles.container}>
       <ThemedText type="title">Connect</ThemedText>
       <ThemedText>
         Find and share connections here. This section is designed to help you build

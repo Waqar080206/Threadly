@@ -5,7 +5,7 @@ import { ThemedView } from '@/components/themed-view';
 
 export default function MoreScreen() {
   return (
-    <ThemedView style={styles.container}>
+    <ThemedView lightColor="transparent" style={styles.container}>
       <ThemedText type="title">More</ThemedText>
       <ThemedText>
         Access settings, help, and additional tools in this section. It keeps the
