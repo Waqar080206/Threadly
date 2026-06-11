@@ -1,43 +1,33 @@
-import { Tabs } from 'expo-router';
-
-import { HapticTab } from '@/components/haptic-tab';
-import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors } from '@/constants/theme';
+import { Tabs } from "expo-router";
 
 export default function TabLayout() {
   return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: Colors.light.tint,
-        headerShown: false,
-        tabBarButton: HapticTab,
-      }}>
+    <Tabs>
       <Tabs.Screen
-        name="index"
+        name="dashboard"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="rectangle.grid.2x2.fill" color={color} />,
+          title: "Dashboard",
         }}
       />
+
       <Tabs.Screen
-        name="connect"
+        name="morning-connect"
         options={{
-          title: 'Connect',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="link" color={color} />,
+          title: "Morning",
         }}
       />
+
       <Tabs.Screen
-        name="contacts"
+        name="master-connect"
         options={{
-          title: 'Contacts',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="person.2.fill" color={color} />,
+          title: "Connect",
         }}
       />
+
       <Tabs.Screen
-        name="more"
+        name="settings"
         options={{
-          title: 'More',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="ellipsis.circle" color={color} />,
+          title: "Settings",
         }}
       />
     </Tabs>
